@@ -1,0 +1,25 @@
+Goal: To make a bubble sort program with C
+Input: An array of unsorted 9 numbers
+Output: An array of sorted 9 numbers (using bubble sort)
+Steps: 
+- Make a function to simply print the values of the numbers in the array, printValues()
+	- Use for loop by using the length of the array
+	- Iterate each number in the array step by step
+
+- Make a function to swap the two adjacent values if one is bigger than the other one, swap(int* a, int* b)
+	- Swap the addresses by using a temporary variable
+		- Let the placeholder be *a first.
+		- Then,let *a get *b. Now, the value at b is at a.
+		- Then,let *b get the value of placeholder.Thus, the value at b is now the old value of a.
+
+- Make a function to sort the array in ascending order, sort()
+	- Use nested loop since there will be two values (Meaning: there will be two loops)
+		- The first for loop should use the length of the array, variable_name = i
+		-  The second for loop should use (length of the array) minus one, variable_name = j
+	- Use if conditional statement to determine if the two values need to be swapped or not.
+		- If left value > right value, swap
+			- If array[j] > array[j+1]
+			- Call the swap function, swap(*array[j], *array[j+1])
+	- Call printValues() function to see the result after each pass
+
+	 

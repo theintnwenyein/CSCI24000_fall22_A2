@@ -1,0 +1,46 @@
+Goal: To sort a randomly generated array with a random length in descending order using Bubble sort
+Input: Nothing since it will be randomly generated 
+Output: Sorted array in descending order
+Steps: 
+
+- Include necessary header files such as <time.h> and <stdlib.h> in addition to <stdion.h>
+
+- Set the smallest value limit and the biggest value limit for the array
+
+- Set 9 as the standard length of the array, length = 9
+
+- Set a pre-defined array of length 9, int values[length]
+
+- Call the necessary function prototypes such as randomValues[], printValues[], swap(), and sort()
+
+- Build the main function to print the array before sorting and after sorting
+
+- Create the RandomValues[] function to create randomly generated numbers within the given range, and add them to the array
+
+	- Set the initial value for srand(time())
+
+	- Use for loop to get the random values for the length of the array
+
+		- Use the random value generating formula, and add each value to the array
+			values[i] = random value
+
+- Create the printValues function to print the value of each element of the array
+	- Use for loop by using the length of the array
+	- Iterate each number in the arrray step by step
+
+- Make a function to swap the two adjacent values if one is bigget than the otehr one, swap(int* a, int* b)
+	- Swap the addresses by using a temporary variable
+		- Let the placeholder be *a first.
+		- Then, let *a get *b.
+		- Then, let *b get the value of placeholder. Thus, the value at b is now the old value of a.
+
+- Make a function to sort the array in descending order, sort()
+	- Use nested loop since there will be two values
+		- The first for loop should use the length of the array minus 1, variable_name = i
+		- The second for loop should use the length of the array minus 1 , variable_name = j
+	- Use if conditional statements to determine if the two values need to be swapped or not
+		- If left value < right valuek, swap
+			- If array[j] < array[j+1]
+			- Call the swap function, swap(*array[j], *array[j+1])
+	- Call the printValues() function to see the result after each pass
+		- Comment this if the result after each pass doesn't want to be seen 

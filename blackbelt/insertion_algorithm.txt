@@ -1,0 +1,28 @@
+Goal: To sort the given array with by using insertion sort technique
+Input: Nothing since the array is already given
+Output: The sorted array 
+Steps:
+
+- Include necessary header files
+
+- Set the length of the array, length = 9
+
+- Set a pre-defined array of length 9, int values[]
+
+- Call the necessary function prototypes such as sort() and printValues()
+
+- Build the main function to print the array before sorting and after sorting
+
+- Create the function to sort the array in ascending order, sort()
+ 
+	- Use for loop by setting the second element of the array as the starting point
+
+	- Make necessary adjustments by creating a temporary variable to be able to switch the values
+
+	- Use while loop to determine when and how the switch occurs
+
+	- Use printValues() to see the result after each pass
+
+- Create a simple function to print the value of each element in the array
+
+	- Use for loop by starting at the 0th position, stopping at the last element while the behavior is increment
